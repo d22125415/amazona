@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: '1',
       name: 'Adidas Slim shirt',
       slug: 'adidas-slim-shirt',
       category: 'Shirts',
@@ -13,6 +14,7 @@ const data = {
       description: 'shirt produced by small human ;)',
     },
     {
+      _id: '2',
       name: 'Nike Slim shirt',
       slug: 'nike-slim-shirt',
       category: 'Shirts',
@@ -25,6 +27,7 @@ const data = {
       description: 'shirt produced by small human ;)',
     },
     {
+      _id: '3',
       name: 'Adidas Fit Pant',
       slug: 'adidas-fit-shirt',
       category: 'Pants',
@@ -37,6 +40,7 @@ const data = {
       description: 'pants produced by small human ;)',
     },
     {
+      _id: '4',
       name: 'Nike Slim pants',
       slug: 'nike-slim-pants',
       category: 'Shirts',
