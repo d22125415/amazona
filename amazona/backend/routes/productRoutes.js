@@ -1,4 +1,5 @@
 import express from 'express';
+import mongoose from 'mongoose';
 import Product from '../models/productModel.js';
 
 const productRouter = express.Router();
@@ -18,7 +19,9 @@ productRouter.get('/slug/:slug', async (req, res) => {
 });
 
 productRouter.get('/:id', async (req, res) => {
-  const product = await Product.findById(req.params.id);
+  const product = await Product.findById(
+    mongoose.Types.ObjectId(req.params.id)
+  );
   if (product) {
     res.send(product);
   } else {
